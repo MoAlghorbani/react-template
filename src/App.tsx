@@ -3,8 +3,10 @@ import reactLogo from './assets/react.svg'
 import reactRouterLogo from './assets/react-router.svg'
 import zustandLogo from './assets/zustand.svg'
 import tailwindLogo from './assets/tailwind.svg'
+import shadcnLogo from './assets/shadcn.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Button } from './components/ui/button'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,12 +29,16 @@ function App() {
         <a href="https://tailwindcss.com/" target="_blank">
           <img src={tailwindLogo} className="logo tailwind" alt="Tailwind logo" />
         </a>
+        <a href="https://ui.shadcn.com/" target="_blank">
+          <img src={shadcnLogo} className="logo shadcn" alt="Shadcn logo" />
+        </a>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <Button>Click me</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
