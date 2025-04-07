@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import reactRouterLogo from './assets/react-router.svg'
+import zustandLogo from './assets/zustand.svg'
+import tailwindLogo from './assets/tailwind.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -9,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='flex'>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -18,6 +20,12 @@ function App() {
         </a>
         <a href="https://reactrouter.com" target="_blank">
           <img src={reactRouterLogo} className="logo react-router" alt="React Router logo" />
+        </a>
+        <a href="https://zustand.docs.pmnd.rs/" target="_blank">
+          <img src={zustandLogo} className="logo zustand" alt="Zustand logo" />
+        </a>
+        <a href="https://tailwindcss.com/" target="_blank">
+          <img src={tailwindLogo} className="logo tailwind" alt="Tailwind logo" />
         </a>
       </div>
       <h1>Vite + React</h1>
