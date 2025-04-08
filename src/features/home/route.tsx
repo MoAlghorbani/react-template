@@ -4,6 +4,7 @@ import reactLogo from '@/assets/react.svg'
 import shadcnLogo from '@/assets/shadcn.svg'
 import tailwindLogo from '@/assets/tailwind.svg'
 import zustandLogo from '@/assets/zustand.svg'
+import linguiLogo from '@/assets/lingui.svg'
 import { ModeToggle } from '@/components/mode-toggole'
 import { Link } from 'react-router'
 import viteLogo from '/vite.svg'
@@ -20,7 +21,7 @@ export const HomePage = () => {
                     <img src={reactLogo} className="logo w-30" alt="React logo" />
                 </a>
                 <a href="https://reactrouter.com" target="_blank">
-                    <img src={reactRouterLogo} className="logo w-30 invert " alt="React Router logo" />
+                    <img src={reactRouterLogo} className="logo w-30 " alt="React Router logo" />
                 </a>
                 <a href="https://zustand.docs.pmnd.rs/" target="_blank">
                     <img src={zustandLogo} className="logo w-30" alt="Zustand logo" />
@@ -34,8 +35,11 @@ export const HomePage = () => {
                 <a href="https://tanstack.com/query/latest/" target="_blank">
                     <img src={reactQueryLogo} className="logo w-30" alt="React Query logo" />
                 </a>
+                <a href="https://lingui.dev/" target="_blank">
+                    <img src={linguiLogo} className="logo w-30" alt="Lingui logo" />
+                </a>
             </div>
-            <h1 className="text-center my-10">Vite + React + React Router (data mode) + Zustand + Tailwind + Shadcn + React Query</h1>
+            <h3 className="text-center my-10">Vite + React + React Router (data mode) + Zustand + Tailwind + Shadcn + React Query + Lingui</h3>
         </>
     )
 }

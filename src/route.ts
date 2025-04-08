@@ -5,7 +5,6 @@ import { ReactRouterPage } from "./features/react-router/route";
 export const routes: RouteObject[] = [
     {
         path: "/",
-        // element: <HomePage/>,
         Component: HomePage,
     },
     {
@@ -15,6 +14,6 @@ export const routes: RouteObject[] = [
     },
 ]
 
-async function loader({ params }) {
+async function loader({ }) {
     return { message: "Hello, world!" };
 }
