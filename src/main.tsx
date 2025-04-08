@@ -12,6 +12,7 @@ import {
 import { About } from './About.tsx'
 import App from './App.tsx'
 import './index.css'
+import { ThemeProvider } from './components/theme-provider.tsx'
 
 const router = createBrowserRouter([
   {
@@ -29,8 +30,10 @@ const queryClient = new QueryClient()
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-      <ReactQueryDevtools/>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <RouterProvider router={router} />
+      </ThemeProvider>
+      <ReactQueryDevtools />
     </QueryClientProvider>
   </StrictMode>,
 )

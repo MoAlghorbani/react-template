@@ -8,12 +8,15 @@ import reactQueryLogo from './assets/react-query.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Button } from './components/ui/button'
+import { ModeToggle } from './components/mode-toggole'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <span>qwe</span>
+      <ModeToggle/>
       <div className='flex'>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
