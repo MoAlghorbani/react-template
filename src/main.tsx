@@ -10,20 +10,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router"
-import { HomePage } from './features/home/route.tsx'
-import { ReactRouterPage } from './features/react-router/route.tsx'
 import './index.css'
+import { routes } from './route.ts'
+const router = createBrowserRouter(
+  routes
+);
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/react-router",
-    element: <ReactRouterPage />,
-  },
-]);
 
 const queryClient = new QueryClient()
 
