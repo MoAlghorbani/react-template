@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/components/theme-provider.tsx'
 import {
   QueryClient,
   QueryClientProvider
@@ -9,19 +10,18 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router"
-import { About } from './About.tsx'
-import App from './App.tsx'
+import { HomePage } from './features/home/route.tsx'
+import { ReactRouterPage } from './features/react-router/route.tsx'
 import './index.css'
-import { ThemeProvider } from './components/theme-provider.tsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
   },
   {
-    path: "/about",
-    element: <About />,
+    path: "/react-router",
+    element: <ReactRouterPage />,
   },
 ]);
 
