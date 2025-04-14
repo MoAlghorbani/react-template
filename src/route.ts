@@ -1,6 +1,6 @@
 import { type RouteObject } from "react-router";
-import { HomePage } from "./features/home/route";
-import { ReactRouterPage } from "./features/react-router/route";
+import { HomePage } from "./features/home";
+import { ReactRouterPage } from "./features/react-router";
 
 export const routes: RouteObject[] = [
     {
